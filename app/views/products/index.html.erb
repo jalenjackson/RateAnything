@@ -1,0 +1,94 @@
+<div style="background: url('http://i.huffpost.com/gen/1645730/images/o-VIRTUAL-REALITY-ARM-facebook.jpg') no-repeat;" class="product-img-container">
+  <div class="product-title-container">
+    <h1>Ar Glasses</h1>
+  </div>
+</div>
+
+<div class="product-info">
+
+    <img class="product-bg" src = "https://codemyviews-blog-post-images.s3.amazonaws.com/uploads/virtual-reality-header.jpg">
+
+
+    <img class="product-side-img" src = "https://cdn-learn.adafruit.com/assets/assets/000/015/896/medium800/hacks_IMG_4616.jpg?1397839256">
+
+  <div class="product-overlay">
+
+  </div>
+  <div class="product-side-info">
+
+    <h1>Ar Glasses</h1>
+    <p class="name"><span class="dashes">------</span> Jalen Jackson</p>
+
+
+    <p class="product-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+    </p>
+  </div>
+</div>
+
+  <div class="wrapper">
+    <div class="slick-codepen">
+      <div>
+        <img src="http://lorempixel.com/540/300/nightlife/1" />
+
+      </div>
+
+      <div>
+        <img src="http://lorempixel.com/320/340/nightlife/10" />
+
+      </div>
+
+      <div>
+        <img src="http://lorempixel.com/520/400/nightlife/3" />
+
+      </div>
+
+      <div>
+        <img src="http://lorempixel.com/380/300/nightlife/4" />
+
+      </div>
+
+      <div class="slick-slide">
+        <img src="http://lorempixel.com/500/320/nightlife/5" />
+
+      </div>
+    </div>
+  </div>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+<script>
+    $('.slick-codepen').slick({
+        draggable: false,
+        accessibility: true,
+        slidesToShow: 1,
+        speed: 800,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3200
+    });
+
+
+    var prevSlideInterval = null,
+        nextSlideInterval = null;
+
+    function prevSlideAnimation() { $('.slick-codepen').slickPrev(); };
+    function nextSlideAnimation() { $('.slick-codepen').slickNext(); };
+
+    $('.slick-prev').on('mouseenter', function() {
+        prevSlideInterval = window.setInterval(function(){ prevSlideAnimation() }, 200);
+    });
+
+    $('.slick-prev').on('mouseleave', function() {
+        window.clearInterval(prevSlideInterval);
+    });
+
+    $('.slick-next').on('mouseenter', function(){
+        nextSlideInterval = window.setInterval(function(){ nextSlideAnimation() }, 200);
+    });
+
+    $('.slick-next').on('mouseleave', function() {
+        window.clearInterval(nextSlideInterval);
+    });
+
+
+</script>

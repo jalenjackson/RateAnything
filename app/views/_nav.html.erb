@@ -1,0 +1,270 @@
+<div class="main-navbar">
+  <i style="color:black; font-size:40px;" class="fa fa-bars" aria-hidden="true"></i>
+
+  <div class="design-line"></div>
+  <div class="left-side-nav-items">
+    <a class="hover-link" href = "">All</a>
+    <a class="hover-link" href = "#/products">Electronics</a>
+    <a class="hover-link" href = "">TV/Shows</a>
+    <a class="hover-link" href = "">Books</a>
+    <a class="hover-link" href = "">Games</a>
+    <a class="hover-link" href = "">Cars</a>
+  </div>
+
+  <div class="title-container">
+    MENDO
+  </div>
+
+
+  <div class="right-side-nav-items">
+    <i class="fa fa-search " aria-hidden="true"></i>
+
+  </div>
+  <div class="account-nav-cover-art">
+    <div class="name-overlay">
+      <h1>Jalen Jackson</h1>
+
+      <div class="profile-pic-container">
+        <img class="profile-pic" src = "https://assets.entrepreneur.com/content/16x9/822/20150406145944-dos-donts-taking-perfect-linkedin-profile-picture-selfie-mobile-camera-2.jpeg">
+      </div>
+    </div>
+    <img class="name-bg-img" src = "https://img3.badfon.ru/wallpaper/big/7/be/zvezdy-kosmos-vselennaya-168.jpg">
+  </div>
+</div>
+
+<div class="lower-overlay"></div>
+
+<div class="animated-dropdown">
+  <div class="pulldown-items">
+  <h1 class="animated-dropdown-h1  animated ">Electronics</h1>
+  <ul class="listOf-items-dropdown animated ">
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+    <li>Dummy Text</li>
+
+
+
+  </ul>
+  <div class="animated-dropdown-image-container">
+    <div class="animated-dropdown-image-container-side-info">
+      <h1 class="title-of-product animated ">Title of product</h1>
+      <h2 class="price-of-product animated ">Price</h2>
+    </div>
+
+    <img class="dropdown-side-img animated" src = "https://boygeniusreport.files.wordpress.com/2016/06/iphone-7-plus-hajek.jpg?quality=98&strip=all">
+
+    <img class="dropdown-bg-img" src = "https://boygeniusreport.files.wordpress.com/2016/06/iphone-7-plus-hajek.jpg?quality=98&strip=all">
+  </div>
+  </div>
+</div>
+
+<div class="search-container">
+  <input class="search-input" type="text" placeholder="Write Something">
+</div>
+
+
+
+<script>
+
+
+
+
+
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+
+        if(scroll >= 70){
+            $(".main-navbar").css({
+                background:"white",
+                height:"80px",
+                borderBottom: "7px solid black",
+                zIndex: "6"
+            });
+
+            $(".left-side-nav-items").css({
+                marginTop: "30px"
+            });
+            $(".fa-bars").css({
+                marginTop: "30px"
+            });
+            $(".lower-overlay").css({
+                top: "50px"
+            });
+
+            $(".profile-pic").addClass("move-down");
+
+            $(".title-container").css({
+                marginTop: "25px"
+            });
+            $(".right-side-nav-items").css({
+                marginTop: "25px"
+            });
+            $(".animated-dropdown").css({
+                marginTop: "-70px"
+            });
+        } else if(scroll < 70) {
+            $(".main-navbar").css({
+                background:"none",
+                height:"150px",
+                borderBottom: "none",
+                zIndex: "0"
+
+            });
+
+
+
+            $(".fa-bars").css({
+                marginTop: "60px"
+            });
+            $(".profile-pic").removeClass("move-down");
+
+            $(".left-side-nav-items").css({
+                marginTop: "75px"
+            });
+            $(".lower-overlay").css({
+                top: "150px"
+            });
+            $(".animated-dropdown").css({
+                marginTop: "-30px"
+            });
+            $(".title-container").css({
+                marginTop: "70px"
+            });
+            $(".right-side-nav-items").css({
+                marginTop: "70px"
+            });
+
+
+        }
+
+        if(window.innerWidth > 860) {
+
+            if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+
+                if (scroll >= 2000) {
+                    $(".whats-new-side-container").css({
+                        position: "fixed",
+                        top: "-40%",
+                        right: 0
+                    });
+
+
+                }
+
+                else if (scroll < 2000) {
+                    $(".whats-new-side-container").css({
+                        position: "absolute",
+                        top: '140px',
+                        left: '64%'
+                    });
+                }
+
+                if (scroll > 2960) {
+                    $(".whats-new-side-container").css({
+                        position: "absolute",
+                        top: '1000px',
+                        left: '64%'
+
+                    });
+                }
+            } else {
+                $(".whats-new-side-container").css({
+                    position: "absolute",
+                    top: '140px',
+                    left: '64%'
+                });
+            }
+        }
+
+
+    });
+
+
+  $(".lower-overlay").hide();
+  $(".search-input").hide();
+  $(".animated-dropdown").hide();
+  $(".dropdown-side-img").hide();
+  $(".title-of-product").hide();
+  $(".price-of-product").hide();
+  $(".animated-dropdown-h1").hide();
+  $(".listOf-items-dropdown").hide();
+
+
+/*
+  $(".hover-link").hover(function(){
+      $(".animated-dropdown").fadeIn("slow");
+      $(".animated-dropdown").addClass("heightChanger");
+      $(".lower-overlay").fadeIn("slow");
+      setTimeout(function(){
+          $(".animated-dropdown-h1").fadeIn("slow").addClass("fadeInUp");
+          $(".listOf-items-dropdown").fadeIn("slow").addClass("fadeInUp");
+
+      },300);
+
+
+
+      setTimeout(function(){
+          $(".title-of-product").fadeIn("slow");
+          $(".price-of-product").fadeIn("slow");
+          $(".dropdown-side-img").fadeIn("slow");
+      },500)
+
+
+  });
+
+  $(".animated-dropdown").hover(function(){
+
+
+
+
+
+
+    }, function(){
+      $(".dropdown-side-img").fadeOut(100);
+      $(".title-of-product").fadeOut(100);
+      $(".price-of-product").fadeOut(100);
+      $(".lower-overlay").fadeOut("slow");
+
+
+      $(".animated-dropdown-h1").fadeOut(100);
+      $(".listOf-items-dropdown").fadeOut(100);
+
+      $(".animated-dropdown").removeClass("heightChanger");
+      $(".animated-dropdown").fadeOut(150);
+  });
+
+*/
+
+
+  $(".fa-search").click(function(){
+          $(".search-input").show();
+
+      $(".search-container").addClass("changeSearchContainerHeight");
+
+  }, function(){
+      $(".search-container").removeClass("changeSearchContainerHeight");
+
+  });
+
+
+
+
+
+
+</script>

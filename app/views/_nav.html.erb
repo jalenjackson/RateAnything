@@ -1,3 +1,7 @@
+<div class="search-away">
+  <h1>Start Writing...</h1>
+  <input class="typer"/>
+</div>
 <div class="main-navbar">
   <i style="color:black; font-size:40px;" class="fa fa-bars" aria-hidden="true"></i>
 
@@ -17,7 +21,7 @@
 
 
   <div class="right-side-nav-items">
-    <i class="fa fa-search " aria-hidden="true"></i>
+    <i class="fa fa-search searching " aria-hidden="true"></i>
 
   </div>
   <div class="account-nav-cover-art">
@@ -83,7 +87,10 @@
 
 
 
+    $(".searching").click(function(){
+        $(".search-away").toggleClass("change-height");
 
+    });
 
     $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
@@ -114,6 +121,11 @@
             $(".right-side-nav-items").css({
                 marginTop: "25px"
             });
+
+            $(".search-away").css({
+                top: "80px"
+            });
+
             $(".animated-dropdown").css({
                 marginTop: "-70px"
             });
@@ -124,6 +136,10 @@
                 borderBottom: "none",
                 zIndex: "0"
 
+            });
+
+            $(".search-away").css({
+                top: "120px"
             });
 
 
@@ -253,6 +269,8 @@
 
 
   $(".fa-search").click(function(){
+      alert();
+      $(".search-away").toggleClass("change-height");
           $(".search-input").show();
 
       $(".search-container").addClass("changeSearchContainerHeight");

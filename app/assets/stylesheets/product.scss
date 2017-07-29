@@ -223,3 +223,34 @@ a:hover{
   }
 }
 
+.search-away {
+  position:fixed;
+  top:80px;
+  left:0;
+  width:100%;
+  height:0%;
+  background:white;
+  z-index: 9999999999999999999999999999;
+  transition: all 400ms ease-in-out;
+  overflow: hidden;
+}
+
+.change-height {
+  height: 70%;
+}
+
+.search-away h1 {
+  font-size:50px;
+  font-weight: bold;
+  text-align:center;
+  margin-top:170px;
+}
+
+.typer {
+  display: block;
+  margin: 0 auto;
+  width:400px;
+  border:none;
+  border-bottom: 2px solid black;
+
+}
